@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+env.json
+
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+scripts/src/frontend/node_modules/
+scripts/src/frontend/.env
+scripts/src/frontend/dist/
+scripts/src/frontend/final_vite.log
+scripts/src/frontend/build_log*.txt
+scripts/src/frontend/vite_output.log
