@@ -433,14 +433,13 @@ function CategoryCard({ name, image, delay = 0 }: CategoryCardProps) {
                 />
             </div>
 
-            {/* Frosted glass overlay */}
+            {/* Gradient overlay for text legibility */}
             <div
-                className="glass-card"
                 style={{
                     position: "absolute",
                     inset: 0,
                     background:
-                        "linear-gradient(to top, rgba(255,245,228,0.7) 0%, rgba(255,255,255,0.1) 50%, transparent 100%)",
+                        "linear-gradient(to top, rgba(255,245,228,0.85) 0%, rgba(255,255,255,0.4) 30%, transparent 100%)",
                 }}
             />
 
