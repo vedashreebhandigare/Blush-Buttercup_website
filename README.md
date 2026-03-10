@@ -1,52 +1,77 @@
-# Blush & Buttercup - Boutique Bakery Landing Page
+# 🧁 Blush & Buttercup - Premium Bakery Landing Page
 
-This project is a high-end landing page for "Blush & Buttercup", a premium boutique bakery based in Mumbai. It is built with React, Vite, Tailwind CSS, and Framer Motion, with a backend intended for the Internet Computer (ICP).
+Welcome to the official repository of **Blush & Buttercup**, a premium boutique bakery based in Mumbai. This project is a high-end web presence designed with a Parisian aesthetic, vibrant animations, and a seamless ordering flow.
 
-## 🧁 Quick Start (Mock Backend)
+---
 
-The easiest way to run the project is using the **Mock Backend**. This allows you to view the full premium design and interact with the UI without needing to set up a local ICP environment.
+## 🚀 One-Click Quick Start (Recommended)
 
-1. **Install Dependencies**:
-   Open your terminal in the project root and run:
-   ```powershell
-   npx pnpm install
-   ```
+I have created automated scripts to handle all installations and technical setup for you.
 
-2. **Enable Mock Mode**:
-   Ensure the following file exists and has mocking enabled:
-   - **File**: `scripts/src/frontend/.env`
-   - **Content**: `VITE_USE_MOCK=true`
+### **Windows Users (PowerShell)**:
+1.  Open PowerShell in the project root.
+2.  Run the following command:
+    ```powershell
+    .\run_dev.ps1
+    ```
 
-3. **Launch the Frontend**:
-   Navigate to the frontend directory and start the dev server:
-   ```powershell
-   cd scripts/src/frontend
-   npx pnpm dev
-   ```
+### **Mac/Linux Users (Bash)**:
+1.  Open your terminal in the project root.
+2.  Run the following command:
+    ```bash
+    sh run_dev.sh
+    ```
 
-4. **Visit the App**:
-   The app is configured to run at [http://localhost:5001](http://localhost:5001).
+---
 
-## 🛠 Features
+## 🛠 Manual Setup Instructions
 
-- **Premium Parisian Aesthetic**: Elegant typography (Parisienne & Poppins) with rich chocolate and raspberry tones.
-- **Dynamic Menu**: Browsable collections of cakes, macarons, and signature bakes.
-- **Interactive UI**: Smooth animations powered by Framer Motion and custom glassmorphism effects.
-- **Mobile Responsive**: Fully optimized for phones, tablets, and desktops.
+If you prefer to set up the project step-by-step:
 
-## 🔗 Running with Real Backend (ICP)
+### **1. Prerequisites**
+*   **Node.js**: Version 18.0 or higher.
+*   **pnpm** (Recommended) or **npm**.
 
-To use the actual Motoko backend code (`backend/main.mo`):
+### **2. Installation**
+In the project root, install all required dependencies:
+```bash
+npx pnpm install
+```
 
-1. **Install DFX**: Ensure the [Internet Computer SDK](https://sdk.dfinity.org/docs/quickstart/local-quickstart.html) is installed.
-2. **Start Local Replica**: `dfx start --background --clean`
-3. **Deploy Canisters**: `dfx deploy`
-4. **Configure Frontend**: Set `VITE_USE_MOCK=false` in `scripts/src/frontend/.env`.
-5. **Run Frontend**: `npx pnpm dev` (inside the frontend directory).
+### **3. Setting up Local Environment**
+Ensure you have a `.env` file in `scripts/src/frontend/` with the following content:
+```env
+VITE_USE_MOCK=true
+VITE_PORT=5001
+```
 
-## 📁 Project Layout
+### **4. Running the Development Server**
+Navigate to the frontend directory and start the bakery:
+```bash
+cd scripts/src/frontend
+npx pnpm dev
+```
+👉 Access the site at **[http://localhost:5001](http://localhost:5001)**.
 
-- `/backend`: The Motoko actor logic for managing menu items and inquiries.
-- `/scripts/src/frontend`: The React application source.
-- `/scripts/src/frontend/src/mocks`: Mock data implementation for rapid development.
-- `/scripts/src/frontend/src/components/ui`: Custom premium UI components.
+---
+
+## 📁 Key Folders
+
+*   **`scripts/src/frontend/`**: The core React/Vite source code.
+*   **`scripts/src/frontend/public/assets/generated/`**: Where you can swap your own bakery images.
+*   **`scripts/src/frontend/src/App.tsx`**: The main file for changing UI text and layout.
+*   **`scripts/src/backend/`**: Internet Computer (ICP) Motoko backend logic.
+
+---
+
+## ✨ Features & Technologies
+
+*   **⚡ Powered by Vite**: Lighting fast development and build.
+*   **🍰 Parisian Aesthetic**: Elegant "Parisienne" and "Poppins" typography.
+*   **🪄 Framer Motion**: Premium hover effects and scroll animations.
+*   **🍦 Glassmorphism**: High-end UI cards with frosted glass effects.
+*   **🎨 Custom Palette**: Raspberry, blush pink, and warm cream tones.
+
+---
+
+**Baked with Love, Frosted with Magic 🧁✨**
