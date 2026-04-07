@@ -3,7 +3,7 @@
 Welcome to the official repository of **Blush & Buttercup**, a premium boutique bakery based in Mumbai. This project is a high-end web presence designed with a Parisian aesthetic, vibrant animations, and a seamless ordering flow.
 
 ---
-
+* Deployed website: https://blushbuttercupbakery.netlify.app/
 ## 🚀 One-Click Quick Start (Recommended)
 
 I have created automated scripts to handle all installations and technical setup for you.
