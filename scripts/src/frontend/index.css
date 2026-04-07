@@ -278,6 +278,40 @@
     }
 }
 
+.glitter-name {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f8b9d4, #ff7fa5, #d14d72, #f6b8f0);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 12px rgba(209, 77, 114, 0.25);
+}
+
+.glitter-name::before,
+.glitter-name::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, transparent 80%);
+    opacity: 0;
+    animation: sparkle-drift 2.2s ease-in-out infinite;
+}
+
+.glitter-name::before {
+    top: -8px;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.glitter-name::after {
+    top: -6px;
+    right: -8px;
+    animation-delay: 1.1s;
+}
+
 /* =====================================================
    HERO SECTION
    ===================================================== */

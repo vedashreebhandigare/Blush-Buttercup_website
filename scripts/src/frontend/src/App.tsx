@@ -1721,15 +1721,8 @@ function Footer() {
                         className="font-poppins text-xs text-center"
                         style={{ color: "#5A2E2E" }}
                     >
-                        Built with ❤️ using{" "}
-                        <a
-                            href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#D14D72", textDecoration: "underline" }}
-                        >
-                            caffeine.ai
-                        </a>
+                        MADE BY {" "}
+                        <span className="glitter-name">BuildMinds</span>
                     </p>
                     <span className="text-2xl">🧁</span>
                 </div>
