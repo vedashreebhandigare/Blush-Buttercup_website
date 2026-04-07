@@ -1,0 +1,13 @@
+[build]
+  command = "cd scripts/src/frontend && pnpm install && pnpm build"
+  publish = "scripts/src/frontend/dist"
+
+[build.environment]
+  VITE_USE_MOCK = "true"
+  VITE_PORT = "5001"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200</content>
+<parameter name="filePath">d:\Blush_and_buttercup\netlify.toml
