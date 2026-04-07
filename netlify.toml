@@ -9,5 +9,4 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200</content>
-<parameter name="filePath">d:\Blush_and_buttercup\netlify.toml
+  status = 200
